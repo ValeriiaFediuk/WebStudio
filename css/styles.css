@@ -54,18 +54,22 @@ a {
   color: var(--pressed-state);
   text-decoration: underline;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--pressed-state);
   text-decoration: underline;
 }
+
 .address-link {
   color: inherit;
 }
+
 .address-link:active {
   color: var(--pressed-state);
   text-decoration: underline;
 }
+
 .address-link:hover,
 .address-link:focus {
   color: var(--pressed-state);
@@ -75,12 +79,12 @@ a {
 .hero-section {
   background-color: var(--dark);
 }
+
 .hero-section .title {
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
   color: var(--white);
-  letter-spacing: 2%;
   text-align: center;
 }
 
@@ -103,6 +107,33 @@ a {
   text-align: left;
   color: var(--dark);
 }
-.text {
+
+.features .text-title {
   text-align: left;
+}
+.features .text {
+  text-align: left;
+}
+
+.section-title {
+  color: var(--dark)
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.id-section {
+  background-color: var(--light);
+}
+
+.team-card {
+  background-color: var(--white);
+}
+
+.team-card .text-title {
+  text-align: center;
+}
+.team-card .text {
+  text-align: center;
 }
