@@ -92,10 +92,11 @@ a {
 .hero-section .button {
   font-family: inherit;
   font-weight: 500;
-  color: var(--white);
-  background-color: var(--primary-brand);
   letter-spacing: 4%;
   cursor: pointer;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--primary-brand);
 }
 .hero-section .button:hover,
 .hero-section .button:focus {
@@ -105,10 +106,12 @@ a {
 .text-title {
   font-weight: 500;
   font-size: 20px;
-  text-align: left;
   color: var(--dark);
 }
 
+.text {
+  color: var(--body-text);
+}
 .features .text-title {
   text-align: left;
 }
@@ -150,4 +153,30 @@ a {
 .footer-text {
   text-align: left;
   color: var(--light);
+}
+
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--primary-brand);
+  background-color: var(--light);
+  letter-spacing: 4%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-button:active {
+  color: var(--white);
+  background-color: var(--pressed-state);
+}
+
+.filter-button:focus,
+.filter-button:hover {
+  color: var(--white);
+  background-color: var(--pressed-state);
+}
+
+.project-card .text-title,
+.project-card .text {
+  text-align: left;
 }
