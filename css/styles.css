@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 ul {
@@ -36,7 +36,7 @@ a {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-align: left;
 }
 .logo-web {
@@ -92,7 +92,7 @@ a {
 .hero-section .button {
   font-family: inherit;
   font-weight: 500;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
   cursor: pointer;
   text-align: center;
   color: var(--white);
@@ -160,7 +160,7 @@ a {
   font-weight: 500;
   color: var(--primary-brand);
   background-color: var(--light);
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
   text-align: center;
   cursor: pointer;
 }
