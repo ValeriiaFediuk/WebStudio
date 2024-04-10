@@ -7,16 +7,14 @@
   --subtle-text: #8e8f99;
   --accent: #e7e9fc;
   --light: #f4f4fd;
-  --modal-overlay: #2e2f42;
-  --hero-background: #2e2f42;
-  --white-background: #ffffff;
+  --white: #ffffff;
   --modal-background: #fcfcfc;
 }
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
-  color: var(--primary-brand);
-  background-color: var(--white-background);
+  color: var(--body-text);
+  background-color: var(--white);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -27,9 +25,13 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
@@ -42,21 +44,65 @@ ul {
 .logo-studio {
   color: var(--dark);
 }
-.nav {
+.header .nav-link {
+  font-weight: 500;
+  text-align: left;
+  color: var(--dark);
 }
-.nav-link {
+
+.nav-link:active {
+  color: var(--pressed-state);
+  text-decoration: underline;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--pressed-state);
+  text-decoration: underline;
 }
 .address-link {
+  color: inherit;
 }
+.address-link:active {
+  color: var(--pressed-state);
+  text-decoration: underline;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--pressed-state);
+  text-decoration: underline;
+}
+
 .hero-section {
+  background-color: var(--dark);
 }
-.title {
+.hero-section .title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  color: var(--white);
+  letter-spacing: 2%;
+  text-align: center;
 }
-.button {
+
+.hero-section .button {
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-brand);
+  letter-spacing: 4%;
+  cursor: pointer;
 }
-.features-section {
+.hero-section .button:hover,
+.hero-section .button:focus {
+  background-color: var(--pressed-state);
+}
+
+.text-title {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  color: var(--dark);
 }
 .text {
-}
-.text-title {
+  text-align: left;
 }
