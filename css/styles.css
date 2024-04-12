@@ -64,6 +64,7 @@ a {
 
 .address-link {
   color: inherit;
+  font-style: normal;
 }
 
 .address-link:active {
