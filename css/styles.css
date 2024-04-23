@@ -198,20 +198,41 @@ img {
   background-color: var(--pressed-state);
 }
 
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
 .text-title {
   font-weight: 500;
   font-size: 20px;
   color: var(--dark);
+  padding-bottom: 8px;
 }
 
 .text {
   color: var(--body-text);
 }
+
 .features .text-title {
   text-align: left;
 }
+
 .features .text {
   text-align: left;
+}
+
+.works-section {
+  padding-bottom: 120px;
 }
 
 .section-title {
@@ -222,6 +243,12 @@ img {
   text-align: center;
 }
 
+.works-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 72px;
+}
 .id-section {
   background-color: var(--light);
 }
