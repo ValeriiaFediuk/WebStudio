@@ -290,8 +290,14 @@ img {
 
 .footer {
   background-color: var(--dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer .logo-studio {
   color: var(--light);
 }
@@ -299,6 +305,7 @@ img {
 .footer-text {
   text-align: left;
   color: var(--light);
+  max-width: 264px;
 }
 
 .filter-button {
