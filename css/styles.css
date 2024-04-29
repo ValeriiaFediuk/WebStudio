@@ -336,6 +336,62 @@ img {
   padding-bottom: 32px;
 }
 
+.customers {
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-wrapper {
+  display: flex;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
+}
+
+.customers-wrapper:hover,
+.customers-wrapper:focus {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--pressed-state);
+}
+
+.customers-wrapper:hover .customers-icons,
+.customers-wrapper:focus .customers-icons {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--pressed-state);
+}
+
+.customers-icons {
+  fill: var(--subtle-text);
+}
+
+.customers-icons:hover,
+.customers-icons:focus {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--pressed-state);
+}
+
 .footer {
   background-color: var(--dark);
   padding-top: 100px;
