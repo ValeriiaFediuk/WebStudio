@@ -816,3 +816,81 @@ input[type="checkbox"]:checked
 .agreement-button:focus {
   background-color: var(--pressed-state);
 }
+
+.subscribe-footer-form {
+  max-width: 453px;
+  width: 100%;
+  margin-left: 80px;
+}
+
+.subscribe-form-text {
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-label {
+  max-width: 264px;
+  flex-basis: 100%;
+  height: 40px;
+}
+
+.subscribe-input {
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0, 04em;
+}
+
+.subscribe-input::placeholder {
+  color: currentColor;
+}
+
+.subscribe-input:focus {
+  color: var(--primary-brand);
+}
+
+.subscribe-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  border: none;
+  gap: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: var(--primary-brand);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-icon {
+  stroke: var(--primary-brand);
+  fill: #fff;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--pressed-state);
+}
