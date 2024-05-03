@@ -381,38 +381,83 @@ img {
 
 /* Works */
 
-.works-section {
-  padding-bottom: 120px;
+@media only screen and (max-width: 1157px) {
+  .works-section {
+    display: none;
+  }
 }
 
-.section-title {
-  color: var(--dark);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
+@media only screen and (min-width: 1158px) {
+  .works-section {
+    padding-bottom: 120px;
+  }
+
+  .section-title {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .works-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 72px;
+  }
 }
 
-.works-list {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-top: 72px;
-}
+/* Works */
 
 .id-section {
   background-color: var(--light);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1158px) {
+  .id-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .id-section .section-title {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  text-transform: capitalize;
+  text-align: center;
   margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 }
 
 .team-card {
@@ -465,6 +510,8 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+/* Customers */
 
 .customers {
   padding-bottom: 120px;
