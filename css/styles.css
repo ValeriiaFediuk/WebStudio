@@ -273,7 +273,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero/Dark-bg_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -282,10 +282,37 @@ img {
   padding: 112px 0;
 }
 
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-color: var(--dark);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_mob@2x.jpg);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero-section {
     max-width: 768px;
     margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_tab@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-color: var(--dark);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_tab@2x.jpg);
   }
 }
 
@@ -295,6 +322,22 @@ img {
     padding-bottom: 188px;
     max-width: 1440px;
     margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_desk@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-color: var(--dark);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_desk@2x.jpg);
   }
 }
 
@@ -417,18 +460,6 @@ img {
     width: calc((100% - 72px) / 4);
   }
 }
-
-/*
-.text-title {
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--dark);
-}
-
-.text {
-  color: var(--body-text);
-}
-*/
 
 .features-item .text-title {
   font-weight: 700;
