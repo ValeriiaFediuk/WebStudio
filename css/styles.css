@@ -1042,8 +1042,16 @@ img {
 
 .project-card .text-title {
   margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--dark);
 }
 
+.project-card .text {
+  color: var(--body-text);
+}
 .project-text {
   padding: 32px 16px 32px 16px;
   border-bottom: 1px solid var(--accent);
